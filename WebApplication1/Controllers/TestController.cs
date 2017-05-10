@@ -12,9 +12,9 @@ namespace WebApplication1.Controllers
         // GET: api/Test
         public IEnumerable<string> Get()
         {
-            string connectionString = !String.IsNullOrEmpty(Environment.GetEnvironmentVariable("DBConnction")) 
-                                                ? Environment.GetEnvironmentVariable("DBConnction") 
-                                                : System.Configuration.ConfigurationManager.ConnectionStrings["DBConnction"].ConnectionString;
+            string connectionString = !String.IsNullOrEmpty(Environment.GetEnvironmentVariable("DBConnection")) 
+                                                ? Environment.GetEnvironmentVariable("DBConnection") 
+                                                : System.Configuration.ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
 
             return new string[] { "value1", "value2",connectionString };
         }

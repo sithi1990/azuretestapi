@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
                                                 ? Environment.GetEnvironmentVariable("DBConnection") 
                                                 : System.Configuration.ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
 
-            return new string[] { "value1", "value2","value3",connectionString };
+            return new string[] { "value1", "value2","value3","value4",connectionString };
         }
 
         // GET: api/Test/5
